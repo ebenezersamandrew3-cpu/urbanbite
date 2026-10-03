@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: rgba(20, 20, 20, 0.96);
+    color: white;
+}
+
+header h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8a00;
+}
+
+/* HERO */
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+        center/cover no-repeat;
+}
+
+#home h2 {
+    max-width: 850px;
+
+    font-size: clamp(42px, 8vw, 76px);
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+
+    font-size: 19px;
+
+    color: #eee;
+}
+
+button {
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #ff7a00;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* GENERAL */
+
+section {
+    padding: 90px 7%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 45px;
+}
+
+/* MENU */
+
+#menu {
+    background: #f8f8f8;
+}
+
+#menu > div {
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 20px;
+
+    margin: auto;
+}
+
+#menu > div {
+    background: white;
+}
+
+#menu div {
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+#menu div:hover {
+    transform: translateY(-6px);
+}
+
+#menu h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+#menu p {
+    color: #666;
+}
+
+/* ABOUT */
+
+#about {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+#about p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+/* CONTACT */
+
+#contact {
+    background: #111;
+    color: white;
+
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px;
+
+    color: #ccc;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080808;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #home {
+        min-height: 80vh;
+    }
+
+    #home h2 {
+        font-size: 45px;
+    }
+
+    #menu > div {
+        display: block;
+    }
+
+    #menu div {
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+}.whatsapp-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 14px 28px;
+
+    background: #25D366;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
